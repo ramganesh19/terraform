@@ -17,3 +17,4 @@ variable "node1IpAndPort" {
 variable "node2IpAndPort" {
     description = "Please enter Pool Memeber 2 IP and Port in the format 192.168.3.2:80"
 }
+

@@ -11,5 +11,5 @@ variable "vs_ip" {
     description = "Please enter Virtual Server IP (VIP) in the format 192.168.2.1"
 }
 variable "nodeIpAndPort" {
-    description = "Please enter Pool Memeber IP and Port in the format 192.168.3.1:80"
+    description = "Please enter Pool Member IP and Port in the format 192.168.3.1:80"
 }

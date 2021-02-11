@@ -13,17 +13,17 @@ terraform {
  }
 
 provider "azurerm" {
-  subscription_id = "3f46eb68-a3c8-4827-b205-5701fbe1a607"
+  subscription_id = "<Your Subscription Id>"
   features {}
 }
 
 data "azurerm_key_vault" "example" {
-	name = "networkteam"
-	resource_group_name = "DR_HouExRL3"
+	name = "<Your Vault Name>"
+	resource_group_name = "<Your Resource Group Name>"
 }
 
 data "azurerm_key_vault_secret" "test" {
-  name      = "f5-corp-test-admin"
+  name      = "<Your Secret Name>"
   key_vault_id = data.azurerm_key_vault.example.id
 }
 
